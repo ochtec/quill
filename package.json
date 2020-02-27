@@ -1,36 +1,9 @@
 {
-  "name": "quill",
-  "version": "2.0.0-dev.3",
+  "name": "@ochtec/quill",
+  "version": "2.0.0-dev.2",
   "description": "Your powerful, rich text editor",
   "author": "Jason Chen <jhchen7@gmail.com>",
   "homepage": "http://quilljs.com",
-  "main": "dist/quill.js",
-  "files": [
-    "assets",
-    "blots",
-    "core",
-    "formats",
-    "modules",
-    "themes",
-    "ui",
-    "dist/quill.bubble.css",
-    "dist/quill.snow.css",
-    "dist/quill.core.css",
-    "dist/quill.js",
-    "dist/quill.core.js",
-    "dist/quill.min.js.map",
-    "dist/quill.min.js",
-    "core.js",
-    "quill.js"
-  ],
-  "config": {
-    "ports": {
-      "proxy": "9000",
-      "jekyll": "4000",
-      "karma": "9876",
-      "webpack": "9080"
-    }
-  },
   "dependencies": {
     "clone": "^2.1.2",
     "deep-equal": "^1.0.1",
@@ -79,70 +52,7 @@
   "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
-    "url": "https://github.com/quilljs/quill"
-  },
-  "bugs": {
-    "url": "https://github.com/quilljs/quill/issues"
-  },
-  "eslintConfig": {
-    "extends": [
-      "airbnb",
-      "prettier"
-    ],
-    "env": {
-      "browser": true,
-      "commonjs": true,
-      "es6": true
-    },
-    "plugins": [
-      "prettier"
-    ],
-    "settings": {
-      "import/resolver": {
-        "webpack": {
-          "config": "_develop/webpack.config.js"
-        }
-      }
-    },
-    "rules": {
-      "arrow-body-style": [
-        "off"
-      ],
-      "class-methods-use-this": [
-        "off"
-      ],
-      "import/no-extraneous-dependencies": [
-        "error",
-        {
-          "devDependencies": [
-            "_develop/*.js",
-            "test/**/*.js"
-          ]
-        }
-      ],
-      "no-param-reassign": [
-        "off"
-      ],
-      "no-use-before-define": [
-        "error",
-        {
-          "functions": false
-        }
-      ],
-      "import/named": [
-        "error"
-      ],
-      "prettier/prettier": "error"
-    }
-  },
-  "eslintIgnore": [
-    "dist/",
-    "docs/",
-    "node_modules/"
-  ],
-  "prettier": {
-    "singleQuote": true,
-    "trailingComma": "all"
+    "url": "https://github.com/ochtec/quill"
   },
   "scripts": {
     "build": "npm run lint && npm run build:webpack",
